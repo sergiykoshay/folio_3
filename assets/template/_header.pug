@@ -1,0 +1,15 @@
+header.header
+    nav(role="navigation")
+        .logo
+            a(href="#").logo__link  My Logo
+                img(src="images/favicon.png", alt="my logo", srcset="")
+        input(type="checkbox" id="h-menu")
+        label(for="h-menu" id="burger" onclick)
+            span
+        ul.main-menu
+            each val in ['home', 'about', 'portfolio', 'map me', 'contact']
+                li.main-menu__item
+                    a(href="#")= val
+    h1.heading ask some Question?
+    button#js-ask.btn.btn--blue
+        span ask

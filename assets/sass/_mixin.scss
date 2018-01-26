@@ -1,0 +1,35 @@
+﻿@mixin position($pos: relative, $top: null, $right: null, $bottom: null, $left: null) {
+	/*POSITION*/
+	position: $pos;
+	top: $top;
+	right: $right;
+	bottom: $bottom;
+	left: $left;
+}
+
+@mixin flex($direction:row, $justify: space-between){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    flex-wrap: wrap;
+}
+
+@mixin size($w, $h: $w){
+	width: $w;
+	height: $h;
+}
+
+@mixin rotate($time: 1s){
+	position: absolute;
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	transition: transform $time;
+}
+
+@mixin box-shadow($x, $y, $z, $color: #000){
+	box-shadow: $x $y $z $color,
+				(-$x) $y $z $color,
+				$x (-$y) $z $color,
+				(-$x) (-$y) $z $color;
+}
+
