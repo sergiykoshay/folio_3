@@ -25,11 +25,6 @@
 }
 
 
-.boxes{
-    @include size(500px);
-    background-color: red;
-
-}
 
 .logo{
  
@@ -157,7 +152,6 @@ nav[role="navigation"] {
     }
 
     nav[role="navigation"] {
-        border: 1px #222 solid;
         position: absolute;;
         ul {
             display:none;

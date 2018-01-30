@@ -5,20 +5,8 @@
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
-    .container{
-        height: 300px;
-    }
-    .box{
-        width: 280px;
-    }
-    .face{
-        @include size(280px);
-    }
-    .back{
-        @include size(280px);
-    }
-}
 
+}
 /* Smartphones (landscape) ----------- */
 @media only screen 
 and (min-width : 321px) {
@@ -30,18 +18,7 @@ and (min-width : 321px) {
 /* Smartphones (portrait) ----------- */
 @media only screen 
 and (max-width : 320px) {
-    .container{
-        height: 300px;
-    }
-    .box{
-        width: 280px;
-    }
-    .face{
-        @include size(280px);
-    }
-    .back{
-        @include size(280px);
-    }
+
 }
 
 /* iPads (portrait and landscape) ----------- */
